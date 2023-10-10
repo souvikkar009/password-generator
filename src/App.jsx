@@ -47,12 +47,12 @@ function App() {
         lowercaseAllowed,
         symbolAllowed,
         regenrate,
+        generatePassword,
     ]);
 
     const copyToClipboard = () => {
         window.navigator.clipboard.writeText(password);
         passRef.current.select();
-        console.log(passRef.current.value);
     };
 
     return (
@@ -69,6 +69,7 @@ function App() {
                         }}
                         value={password}
                         ref={passRef}
+                        readOnly
                     />
                     <div className="flex items-center gap-2">
                         <RxCopy
