@@ -88,9 +88,9 @@ function App() {
                     <div className="text-xl font-bold text-center">
                         Customize Your Password
                     </div>
-                    <div className="flex justify-around">
-                        <div className="flex flex-col items-center gap-4 text-xl">
-                            <div>Password Length</div>
+                    <div className="grid grid-cols-2">
+                        <div className="flex flex-col items-center gap-4 text-xl justify-self-center">
+                            <div className="font-semibold">Password Length</div>
                             <input
                                 type="range"
                                 min={6}
@@ -100,12 +100,13 @@ function App() {
                                 onChange={(e) =>
                                     setPasswoedLength(e.target.value)
                                 }
+                                className="w-full"
                             />
                             <label htmlFor="p-length">
-                                Length: <span>{passwoedLength}</span>
+                                Length: <span className="font-semibold">{passwoedLength}</span>
                             </label>
                         </div>
-                        <div className="flex flex-col items-start gap-1">
+                        <div className="flex flex-col item-center gap-1 justify-self-center">
                             <label className="checkbox-style">
                                 <input
                                     type="checkbox"
