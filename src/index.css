@@ -12,11 +12,20 @@ body {
     background: var(--color-bg);
     height: 100vh;
     width: 100vw;
-    /* @apply bg-[#caef7] h-screen w-screen; */
 }
 
 .checkbox-style {
     display: flex;
     gap: 8px;
     font-size: 1.25rem;
+}
+
+::-moz-selection {
+    color: white;
+    background: var(--primary-color);
+}
+
+::selection {
+    color: white;
+    background: var(--primary-color);
 }
