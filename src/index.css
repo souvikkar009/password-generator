@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-bg: #caedf7;
+    --color-text: #000;
+    --primary-color: #dd2222;
+}
+
+body {
+    background: var(--color-bg);
+    height: 100vh;
+    width: 100vw;
+    /* @apply bg-[#caef7] h-screen w-screen; */
+}
+
+.checkbox-style {
+    display: flex;
+    gap: 8px;
+    font-size: 1.25rem;
+}
